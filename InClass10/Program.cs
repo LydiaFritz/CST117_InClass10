@@ -13,7 +13,7 @@ namespace InClass10
     {
         static void Main( string[] args )
         {
-            StreamReader sr = new StreamReader( "input.in" );
+            StreamReader sr = new StreamReader( "TextFile1.txt" );
             String textLine = sr.ReadToEnd( );
             int ct_lkf = 0;
 
@@ -35,10 +35,14 @@ namespace InClass10
 
                     
                     if (curr.Length > 0)
-                    {                        
+                    {
                         if (curr[ curr.Length - 1 ] == 'e' ||
                             curr[ curr.Length - 1 ] == 't')
+                        {
                             ct_lkf++;
+                            //print the word
+                            Console.WriteLine(curr);
+                        }
                     }
                 }
             }
